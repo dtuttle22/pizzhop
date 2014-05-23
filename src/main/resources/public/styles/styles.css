@@ -54,8 +54,21 @@ body{
 	
 }
 
-h2{
-	text-align: center;
+#ingredients-header h2 {
+	display: inline-block;
+}
+
+#ingredients-header div  {
+	margin-left: 37%;
+}
+
+#new-ingredient{
+	margin-left: 34%;
+	margin-right: auto;
+}
+
+#new-ingredient{
+	display: none;
 }
 
 .ingredient .edit{
@@ -74,5 +87,6 @@ h2{
 .delete{
 	float: right;
 }
+
 
 

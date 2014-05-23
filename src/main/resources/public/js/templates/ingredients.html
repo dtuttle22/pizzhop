@@ -1,4 +1,11 @@
-<header>
-	<h2><%= size %> Ingredients </h2>
+<header id="ingredients-header">
+	<div>
+		<h2><%= size %> Ingredients </h2>
+		<button id="add-ingredient">+</button>
+	</div>
 </header>
+<form id="new-ingredient">
+	<input type="text" placeholder="name">
+	<button>Create</button>
+</form>
 <div id="content"></div>

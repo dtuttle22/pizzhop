@@ -1,4 +1,3 @@
-/*global define*/
 define([
 	'underscore',
 	'backbone',
@@ -16,6 +15,7 @@ define([
 		    $.ajax({
 		        type : 'GET',
 		        url : this.url,
+		        async: false,
 		        dataType : 'json',
 		        success : function(data) {
 		            collection.reset(data.data)

@@ -22,7 +22,16 @@ require.config({
 require([
      	'backbone',
      	'views/app',
-     ], function (Backbone, AppView) {
-
-		new AppView();
+     	'jquery',
+     	'routers/router'
+     ], function (Backbone, AppView,$, Router) {
+		
+	    new Router();		
+		Backbone.history.start();
+		
+		$('#header-nav a').click(function(event){
+			event.preventDefault();
+			var link = $(this);
+			Backbone.history.navigate(link.attr("href"), true);
+		});
      });
